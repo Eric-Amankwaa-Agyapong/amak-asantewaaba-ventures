@@ -7,7 +7,7 @@
   <title>Amak Asantewaaba Ventures | Submersible Pumps</title>
 
   <meta name="description"
-        content="Amak Asantewaaba Ventures supplies submersible pumps and other quality business products in Ghana.">
+    content="Amak Asantewaaba Ventures supplies submersible pumps and other business products in Ghana.">
 
   <style>
     * {
@@ -24,159 +24,150 @@
     }
 
     header {
-      background: #0b3d2e;
+      background: #123d2a;
       color: white;
-      padding: 22px 7%;
+      padding: 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 5px;
     }
 
     header p {
-      font-size: 17px;
-    }
-
-    nav {
-      background: #082d22;
-      padding: 12px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      font-size: 15px;
     }
 
     .hero {
       background: white;
-      padding: 50px 7%;
       text-align: center;
+      padding: 35px 20px;
     }
 
     .hero h2 {
-      font-size: 38px;
-      color: #0b3d2e;
-      margin-bottom: 12px;
+      color: #123d2a;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 19px;
-      max-width: 750px;
+      max-width: 700px;
       margin: auto;
       color: #555;
     }
 
     .products {
-      padding: 45px 7%;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
 
     .products h2 {
       text-align: center;
-      color: #0b3d2e;
-      font-size: 30px;
-      margin-bottom: 30px;
+      color: #123d2a;
+      margin-bottom: 25px;
+      font-size: 28px;
     }
 
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
-      max-width: 1200px;
-      margin: auto;
     }
 
-    .product-card {
+    .product {
       background: white;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
-    .product-card:hover {
+    .product:hover {
       transform: translateY(-5px);
     }
 
-    .product-card img {
+    .product img {
       width: 100%;
-      height: 280px;
+      height: 250px;
       object-fit: cover;
       display: block;
     }
 
     .product-info {
       padding: 20px;
+      text-align: center;
     }
 
     .product-info h3 {
-      color: #0b3d2e;
+      color: #123d2a;
       margin-bottom: 8px;
-      font-size: 22px;
     }
 
     .product-info p {
-      color: #555;
+      color: #666;
       margin-bottom: 15px;
     }
 
-    .whatsapp {
+    .button {
       display: inline-block;
-      background: #25D366;
+      background: #123d2a;
       color: white;
       text-decoration: none;
-      padding: 11px 18px;
+      padding: 10px 20px;
       border-radius: 6px;
       font-weight: bold;
     }
 
+    .button:hover {
+      background: #1d6244;
+    }
+
     .contact {
       background: white;
-      padding: 45px 7%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 20px;
       text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
     .contact h2 {
-      color: #0b3d2e;
+      color: #123d2a;
       margin-bottom: 20px;
-      font-size: 30px;
     }
 
     .contact p {
       margin: 10px 0;
-      font-size: 17px;
     }
 
     .contact a {
-      color: #0b3d2e;
+      color: #123d2a;
       font-weight: bold;
       text-decoration: none;
     }
 
     footer {
-      background: #082d22;
+      background: #123d2a;
       color: white;
       text-align: center;
-      padding: 25px;
-      margin-top: 0;
+      padding: 20px;
+      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 25px;
+        font-size: 23px;
       }
 
       .hero h2 {
-        font-size: 30px;
+        font-size: 24px;
       }
 
-      nav a {
-        margin: 0 7px;
-        font-size: 14px;
+      .product img {
+        height: 220px;
       }
     }
   </style>
@@ -184,94 +175,58 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Amak Asantewaaba Ventures</h1>
-    <p>Quality Products & Reliable Business Services</p>
+    <p>Quality Products & Reliable Business Services in Ghana</p>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- HERO -->
   <section class="hero">
-    <h2>Welcome to Amak Asantewaaba Ventures</h2>
+    <h2>Submersible Pumps</h2>
     <p>
-      We supply quality submersible pumps and other products
-      to customers across Ghana.
+      Browse our available submersible pumps below.
+      Contact us directly for prices, specifications and orders.
     </p>
   </section>
 
-  <!-- PRODUCTS -->
-  <section class="products" id="products">
-    <h2>Our Submersible Pumps</h2>
+  <section class="products">
+
+    <h2>Our Products</h2>
 
     <div class="product-grid">
 
-      <!-- PRODUCT 1 -->
-      <div class="product-card">
+      <div class="product">
         <img src="pump%201.jpeg" alt="Submersible Pump">
         <div class="product-info">
-          <h3>Submersible Pump</h3>
-          <p>
-            Quality submersible pump suitable for water pumping
-            applications.
-          </p>
-
-          <a class="whatsapp"
-             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20am%20interested%20in%20your%20submersible%20pump."
-             target="_blank">
-             WhatsApp Us
-          </a>
+          <h3>Submersible Pump 1</h3>
+          <p>Durable submersible pump suitable for water pumping applications.</p>
+          <a class="button" href="tel:+233268669949">Contact to Order</a>
         </div>
       </div>
 
-      <!-- PRODUCT 2 -->
-      <div class="product-card">
+      <div class="product">
         <img src="pump%202.jpeg" alt="Submersible Pumps">
         <div class="product-info">
           <h3>Submersible Pumps</h3>
-          <p>
-            Different types and sizes of submersible pumps available.
-          </p>
-
-          <a class="whatsapp"
-             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20want%20to%20enquire%20about%20your%20submersible%20pumps."
-             target="_blank">
-             WhatsApp Us
-          </a>
+          <p>Various pump models available for different water pumping needs.</p>
+          <a class="button" href="tel:+233235433658">Contact to Order</a>
         </div>
       </div>
 
-      <!-- PRODUCT 3 -->
-      <div class="product-card">
-        <img src="pump%203.jpeg" alt="Water Pumps">
+      <div class="product">
+        <img src="pump%203.jpeg" alt="Water Submersible Pumps">
         <div class="product-info">
-          <h3>Water Pump Solutions</h3>
-          <p>
-            Reliable pumping equipment for various water supply needs.
-          </p>
-
-          <a class="whatsapp"
-             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20would%20like%20more%20information%20about%20your%20water%20pumps."
-             target="_blank">
-             WhatsApp Us
-          </a>
+          <h3>Water Pump Collection</h3>
+          <p>Quality pumping equipment available from Amak Asantewaaba Ventures.</p>
+          <a class="button" href="tel:+233268669949">Contact to Order</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="contact">
 
     <h2>Contact Amak Asantewaaba Ventures</h2>
-
-    <p><strong>CEO:</strong> Eric Amankwaa Agyapong</p>
 
     <p>
       <strong>Phone:</strong>
@@ -299,18 +254,16 @@
 
     <p>
       <strong>Address:</strong><br>
-      P.O. Box 77<br>
+      Post Office Box 77<br>
       Nsuta Wassa<br>
       Ghana, West Africa
     </p>
 
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Amak Asantewaaba Ventures. All Rights Reserved.</p>
+    <p>© 2026 Amak Asantewaaba Ventures. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
