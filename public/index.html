@@ -1,52 +1,141 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amak Asantewaaba Ventures | File & Photo Portal</title><meta name="description" content="Secure file and picture upload portal for Amak Asantewaaba Ventures."><link rel="stylesheet" href="/style.css"></head>
-<body><header><div class="brand"><div class="mark">AAV</div><div><h1>Amak Asantewaaba Ventures</h1><p>Business File & Photo Portal</p></div></div><div class="ceo">CEO<br><strong>Eric Amankwaa Agyapong</strong></div></header>
-<main><section class="hero"><span class="pill">OFFICIAL BUSINESS PORTAL</span><h2>Upload, organize & access your files.</h2><p>Send pictures and business documents through one simple, professional portal.</p></section>
-<section class="card"><div id="drop" class="drop"><div class="icon">↑</div><h3>Drop files here</h3><p>or choose files from your device</p><input id="fileInput" type="file" multiple accept="image/*,.pdf,.doc,.docx,.xls,.xlsx,.txt,.zip"><button id="choose">Choose Files</button><small>Up to 20 files per upload • 50 MB each</small></div><div id="queue"></div><div class="actions"><button id="upload" class="primary" disabled>Upload Files</button><span id="status"></span></div></section>
-<section class="card"><div class="section-head"><div><h3>Uploaded files</h3><p>Your files stored on this website</p></div><button id="refresh" class="ghost">Refresh</button></div><div id="files" class="files"><div class="empty">Loading files…</div></div></section>
-<section class="info"><div><b>Need assistance?</b><span>Contact Amak Asantewaaba Ventures for help with your submission.</span></div><div class="contact"><span>CEO: Eric Amankwaa Agyapong</span></div></section></main><footer>© <span id="year"></span> Amak Asantewaaba Ventures. All rights reserved.</footer><script src="/app.js"></script><<section class="contact">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2>Contact Amak Asantewaaba Ventures</h2>
+  <title>Amak Asantewaaba Ventures | Submersible Pumps</title>
 
-  <p><strong>Phone:</strong>
+  <meta name="description" content="Amak Asantewaaba Ventures supplies submersible pumps and other business products in Ghana.">
 
-    <a href="tel:+233268669949">+233 268 669 949</a>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  </p>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
 
-  <p><strong>Phone:</strong>
+    header {
+      background: #123b5d;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
 
-    <a href="tel:+233235433658">+233 235 433 658</a>
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
 
-  </p>
+    header p {
+      font-size: 17px;
+    }
 
-  <p><strong>Email:</strong>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 15px;
+    }
 
-    <a href="mailto:Amakasantewaaba@yahoo.com">
+    .welcome {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-      Amakasantewaaba@yahoo.com
+    .welcome h2 {
+      color: #123b5d;
+      margin-bottom: 10px;
+    }
 
-    </a>
+    .products-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #123b5d;
+    }
 
-  </p>
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-  <p><strong>Email:</strong>
+    .product {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    }
 
-    <a href="mailto:Amakasantewaaba@gmail.com">
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
 
-      Amakasantewaaba@gmail.com
+    .product-info {
+      padding: 18px;
+      text-align: center;
+    }
 
-    </a>
+    .product-info h3 {
+      color: #123b5d;
+      margin-bottom: 10px;
+    }
 
-  </p>
+    .product-info p {
+      margin-bottom: 15px;
+    }
 
-  <p><strong>Address:</strong><br>
+    .contact-btn {
+      display: inline-block;
+      background: #168a45;
+      color: white;
+      padding: 11px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-    P.O. Box 77<br>
+    .contact-btn:hover {
+      background: #106b35;
+    }
 
-    Nsuta Wassa<br>
+    .contact {
+      background: white;
+      margin-top: 35px;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    }
 
-    Ghana, West Africa
+    .contact h2 {
+      color: #123b5d;
+      margin-bottom: 15px;
+    }
 
-  </p>
+    .contact p {
+      margin: 9px 0;
+    }
 
-</section>/body></html>
+    .contact a {
+      color: #123b5d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #123b5d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
