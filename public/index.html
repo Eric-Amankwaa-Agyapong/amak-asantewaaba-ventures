@@ -6,7 +6,8 @@
 
   <title>Amak Asantewaaba Ventures | Submersible Pumps</title>
 
-  <meta name="description" content="Amak Asantewaaba Ventures supplies submersible pumps and other business products in Ghana.">
+  <meta name="description"
+        content="Amak Asantewaaba Ventures supplies submersible pumps and other quality business products in Ghana.">
 
   <style>
     * {
@@ -19,123 +20,297 @@
       font-family: Arial, sans-serif;
       background: #f5f7fa;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
-      background: #123b5d;
+      background: #0b3d2e;
       color: white;
-      padding: 25px 15px;
+      padding: 22px 7%;
       text-align: center;
     }
 
     header h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
+      font-size: 32px;
+      margin-bottom: 5px;
     }
 
     header p {
       font-size: 17px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 25px 15px;
-    }
-
-    .welcome {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .welcome h2 {
-      color: #123b5d;
-      margin-bottom: 10px;
-    }
-
-    .products-title {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #123b5d;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .product {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-    }
-
-    .product img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .product-info {
-      padding: 18px;
+    nav {
+      background: #082d22;
+      padding: 12px;
       text-align: center;
     }
 
-    .product-info h3 {
-      color: #123b5d;
-      margin-bottom: 10px;
-    }
-
-    .product-info p {
-      margin-bottom: 15px;
-    }
-
-    .contact-btn {
-      display: inline-block;
-      background: #168a45;
+    nav a {
       color: white;
-      padding: 11px 20px;
-      border-radius: 6px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
-    .contact-btn:hover {
-      background: #106b35;
+    .hero {
+      background: white;
+      padding: 50px 7%;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      color: #0b3d2e;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 750px;
+      margin: auto;
+      color: #555;
+    }
+
+    .products {
+      padding: 45px 7%;
+    }
+
+    .products h2 {
+      text-align: center;
+      color: #0b3d2e;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      color: #0b3d2e;
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .product-info p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-weight: bold;
     }
 
     .contact {
       background: white;
-      margin-top: 35px;
-      padding: 25px;
-      border-radius: 12px;
+      padding: 45px 7%;
       text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
     }
 
     .contact h2 {
-      color: #123b5d;
-      margin-bottom: 15px;
+      color: #0b3d2e;
+      margin-bottom: 20px;
+      font-size: 30px;
     }
 
     .contact p {
-      margin: 9px 0;
+      margin: 10px 0;
+      font-size: 17px;
     }
 
     .contact a {
-      color: #123b5d;
+      color: #0b3d2e;
       font-weight: bold;
       text-decoration: none;
     }
 
     footer {
-      margin-top: 30px;
-      background: #123b5d;
+      background: #082d22;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Amak Asantewaaba Ventures</h1>
+    <p>Quality Products & Reliable Business Services</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Welcome to Amak Asantewaaba Ventures</h2>
+    <p>
+      We supply quality submersible pumps and other products
+      to customers across Ghana.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <h2>Our Submersible Pumps</h2>
+
+    <div class="product-grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card">
+        <img src="pump%201.jpeg" alt="Submersible Pump">
+        <div class="product-info">
+          <h3>Submersible Pump</h3>
+          <p>
+            Quality submersible pump suitable for water pumping
+            applications.
+          </p>
+
+          <a class="whatsapp"
+             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20am%20interested%20in%20your%20submersible%20pump."
+             target="_blank">
+             WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card">
+        <img src="pump%202.jpeg" alt="Submersible Pumps">
+        <div class="product-info">
+          <h3>Submersible Pumps</h3>
+          <p>
+            Different types and sizes of submersible pumps available.
+          </p>
+
+          <a class="whatsapp"
+             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20want%20to%20enquire%20about%20your%20submersible%20pumps."
+             target="_blank">
+             WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card">
+        <img src="pump%203.jpeg" alt="Water Pumps">
+        <div class="product-info">
+          <h3>Water Pump Solutions</h3>
+          <p>
+            Reliable pumping equipment for various water supply needs.
+          </p>
+
+          <a class="whatsapp"
+             href="https://wa.me/233268669949?text=Hello%20Amak%20Asantewaaba%20Ventures,%20I%20would%20like%20more%20information%20about%20your%20water%20pumps."
+             target="_blank">
+             WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2>Contact Amak Asantewaaba Ventures</h2>
+
+    <p><strong>CEO:</strong> Eric Amankwaa Agyapong</p>
+
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+233268669949">+233 268 669 949</a>
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+233235433658">+233 235 433 658</a>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:Amakasantewaaba@yahoo.com">
+        Amakasantewaaba@yahoo.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:Amakasantewaaba@gmail.com">
+        Amakasantewaaba@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Address:</strong><br>
+      P.O. Box 77<br>
+      Nsuta Wassa<br>
+      Ghana, West Africa
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Amak Asantewaaba Ventures. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
