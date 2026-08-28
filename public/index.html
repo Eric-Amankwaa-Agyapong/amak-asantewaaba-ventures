@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Amak Asantewaaba Ventures | Products & Services</title>
+  <title>Amak Asantewaaba Ventures | Online Store</title>
 
   <meta name="description"
-    content="Amak Asantewaaba Ventures supplies quality submersible pumps, water pumps, nails and other products in Ghana.">
+    content="Shop quality submersible pumps, water pumps, nails and building materials from Amak Asantewaaba Ventures in Ghana.">
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,250 +18,479 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f6f6;
       color: #222;
-      line-height: 1.6;
     }
 
-    header {
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .top-bar {
       background: #123b5d;
       color: white;
-      padding: 25px 15px;
       text-align: center;
+      padding: 8px;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: white;
+      padding: 14px 4%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
 
     .logo {
-      width: 110px;
-      height: 110px;
+      width: 70px;
+      height: 70px;
       object-fit: contain;
-      background: white;
       border-radius: 50%;
-      padding: 5px;
-      margin-bottom: 10px;
     }
 
-    header h1 {
-      font-size: 30px;
-      margin-bottom: 5px;
+    .brand {
+      min-width: 220px;
     }
 
-    header p {
-      font-size: 16px;
+    .brand h1 {
+      font-size: 20px;
+      color: #123b5d;
     }
 
-    nav {
-      background: #0d2d46;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    .brand p {
+      font-size: 12px;
+      color: #777;
     }
 
-    nav a {
+
+    /* =========================
+       SEARCH
+    ========================= */
+
+    .search-box {
+      flex: 1;
+      display: flex;
+      max-width: 650px;
+    }
+
+    .search-box input {
+      width: 100%;
+      border: 2px solid #123b5d;
+      border-right: none;
+      padding: 13px;
+      font-size: 15px;
+      outline: none;
+      border-radius: 7px 0 0 7px;
+    }
+
+    .search-box button {
+      border: none;
+      background: #123b5d;
       color: white;
-      text-decoration: none;
-      margin: 0 12px;
+      padding: 0 20px;
+      cursor: pointer;
+      border-radius: 0 7px 7px 0;
+      font-size: 18px;
+    }
+
+
+    /* =========================
+       CART BUTTON
+    ========================= */
+
+    .cart-button {
+      position: relative;
+      border: none;
+      background: white;
+      cursor: pointer;
+      font-size: 27px;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #e63946;
+      color: white;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-weight: bold;
     }
 
-    .container {
-      max-width: 1150px;
-      margin: auto;
-      padding: 30px 15px;
+
+    /* =========================
+       CATEGORIES
+    ========================= */
+
+    .categories {
+      background: white;
+      padding: 13px 4%;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      border-bottom: 1px solid #ddd;
     }
 
-    .welcome {
+    .category {
+      border: 1px solid #ddd;
+      background: white;
+      padding: 9px 18px;
+      border-radius: 20px;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .category:hover {
+      background: #123b5d;
+      color: white;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 40px 25px;
+      border-radius: 12px;
+      background: #123b5d;
+      color: white;
       text-align: center;
-      margin-bottom: 30px;
     }
 
-    .welcome h2 {
-      color: #123b5d;
+    .hero h2 {
+      font-size: 34px;
       margin-bottom: 10px;
-      font-size: 28px;
     }
 
-    .products-title {
-      text-align: center;
-      color: #123b5d;
-      margin-bottom: 25px;
-      font-size: 28px;
+    .hero p {
+      font-size: 17px;
+      margin-bottom: 20px;
     }
+
+    .hero-button {
+      display: inline-block;
+      background: #168a45;
+      color: white;
+      text-decoration: none;
+      padding: 13px 25px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 15px 50px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0 18px;
+    }
+
+    .section-heading h2 {
+      color: #123b5d;
+      font-size: 25px;
+    }
+
+
+    /* =========================
+       PRODUCTS
+    ========================= */
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
     }
 
     .product {
       background: white;
-      border-radius: 12px;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-      transition: transform 0.2s;
+      position: relative;
+      box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+      transition: 0.2s;
     }
 
     .product:hover {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
 
-    .product img {
+    .product-image {
+      position: relative;
+    }
+
+    .product-image img {
       width: 100%;
-      height: 250px;
+      height: 230px;
       object-fit: cover;
       display: block;
     }
 
+    .sale {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #e63946;
+      color: white;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .heart {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 35px;
+      height: 35px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+      font-size: 19px;
+    }
+
     .product-info {
-      padding: 20px;
-      text-align: center;
+      padding: 13px;
     }
 
     .product-info h3 {
-      color: #123b5d;
-      margin-bottom: 8px;
-      font-size: 21px;
+      color: #222;
+      font-size: 16px;
+      margin-bottom: 7px;
     }
 
-    .product-info p {
-      color: #555;
-      margin-bottom: 12px;
+    .rating {
+      color: #f5a623;
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+
+    .rating span {
+      color: #777;
+    }
+
+    .description {
+      color: #666;
+      font-size: 13px;
+      min-height: 40px;
+      margin-bottom: 8px;
     }
 
     .price {
+      color: #168a45;
       font-size: 20px;
       font-weight: bold;
-      color: #168a45;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
-    .cart-btn {
+    .price small {
+      color: #999;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .add-cart {
+      width: 100%;
       border: none;
       background: #168a45;
       color: white;
-      padding: 11px 20px;
+      padding: 11px;
       border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
-      font-size: 15px;
     }
 
-    .cart-btn:hover {
+    .add-cart:hover {
       background: #106b35;
     }
 
-    /* CART */
 
-    .cart-section {
+    /* =========================
+       CART PANEL
+    ========================= */
+
+    .cart-panel {
+      position: fixed;
+      right: -420px;
+      top: 0;
+      width: 400px;
+      max-width: 95%;
+      height: 100vh;
       background: white;
-      margin-top: 45px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+      z-index: 3000;
+      box-shadow: -5px 0 20px rgba(0,0,0,0.25);
+      transition: right 0.3s ease;
+      display: flex;
+      flex-direction: column;
     }
 
-    .cart-section h2 {
-      text-align: center;
-      color: #123b5d;
-      margin-bottom: 20px;
+    .cart-panel.open {
+      right: 0;
     }
 
-    #cartItems {
-      margin-bottom: 20px;
+    .cart-header {
+      background: #123b5d;
+      color: white;
+      padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .empty-cart {
-      text-align: center;
-      color: #777;
+    .close-cart {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
       padding: 15px;
     }
 
     .cart-item {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
+      gap: 10px;
       border-bottom: 1px solid #ddd;
       padding: 12px 0;
+    }
+
+    .cart-item img {
+      width: 65px;
+      height: 65px;
+      object-fit: cover;
+      border-radius: 6px;
     }
 
     .cart-item-info {
       flex: 1;
     }
 
-    .cart-item-info strong {
-      color: #123b5d;
+    .cart-item-info h4 {
+      font-size: 14px;
+      margin-bottom: 5px;
     }
 
-    .quantity-controls {
+    .cart-item-info p {
+      color: #168a45;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .quantity {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
+      margin-top: 7px;
     }
 
-    .quantity-controls button {
-      width: 30px;
-      height: 30px;
+    .quantity button {
+      width: 25px;
+      height: 25px;
       border: none;
-      border-radius: 5px;
       background: #123b5d;
       color: white;
       cursor: pointer;
-      font-weight: bold;
+      border-radius: 4px;
     }
 
-    .remove-btn {
-      background: #c62828 !important;
+    .remove {
+      color: #e63946;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .cart-footer {
+      padding: 18px;
+      border-top: 1px solid #ddd;
     }
 
     .cart-total {
-      text-align: right;
-      font-size: 21px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
       font-weight: bold;
-      color: #123b5d;
-      margin: 20px 0;
+      margin-bottom: 15px;
     }
 
-    .whatsapp-btn {
-      display: block;
+    .checkout {
       width: 100%;
-      text-align: center;
+      border: none;
       background: #25D366;
       color: white;
-      text-decoration: none;
-      padding: 13px;
+      padding: 14px;
       border-radius: 7px;
       font-weight: bold;
-      border: none;
       cursor: pointer;
       font-size: 16px;
     }
 
-    .whatsapp-btn:hover {
+    .checkout:hover {
       background: #1da851;
     }
 
-    /* CONTACT */
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact {
       background: white;
       margin-top: 40px;
       padding: 30px 20px;
-      border-radius: 12px;
+      border-radius: 10px;
       text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     .contact h2 {
       color: #123b5d;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
     .contact p {
-      margin: 9px 0;
+      margin: 8px;
     }
 
     .contact a {
@@ -269,55 +499,122 @@
       text-decoration: none;
     }
 
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
       background: #123b5d;
       color: white;
       text-align: center;
-      padding: 22px 15px;
-      margin-top: 35px;
+      padding: 25px 15px;
+      margin-top: 30px;
     }
 
-    footer p {
-      margin: 5px;
-    }
 
-    @media (max-width: 600px) {
+    /* =========================
+       MOBILE
+    ========================= */
 
-      header h1 {
-        font-size: 24px;
+    @media (max-width: 900px) {
+
+      header {
+        flex-wrap: wrap;
       }
 
-      .logo {
-        width: 90px;
-        height: 90px;
+      .brand {
+        min-width: 0;
       }
 
-      nav a {
-        margin: 0 6px;
-        font-size: 14px;
+      .search-box {
+        order: 5;
+        flex-basis: 100%;
       }
 
       .products {
-        grid-template-columns: 1fr;
-      }
-
-      .product img {
-        height: 240px;
-      }
-
-      .cart-item {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .cart-total {
-        text-align: left;
+        grid-template-columns: repeat(3, 1fr);
       }
     }
+
+
+    @media (max-width: 650px) {
+
+      header {
+        padding: 10px;
+        gap: 10px;
+      }
+
+      .logo {
+        width: 55px;
+        height: 55px;
+      }
+
+      .brand h1 {
+        font-size: 15px;
+      }
+
+      .brand p {
+        font-size: 10px;
+      }
+
+      .hero {
+        margin: 10px;
+        padding: 30px 15px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .product-image img {
+        height: 180px;
+      }
+
+      .product-info {
+        padding: 10px;
+      }
+
+      .product-info h3 {
+        font-size: 14px;
+      }
+
+      .description {
+        font-size: 12px;
+      }
+
+      .price {
+        font-size: 17px;
+      }
+
+      .section-heading h2 {
+        font-size: 21px;
+      }
+
+      .cart-panel {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
   </style>
 </head>
 
+
 <body>
+
+
+  <!-- TOP BAR -->
+
+  <div class="top-bar">
+    🚚 Quality Products • Reliable Service • Ghana
+  </div>
+
 
   <!-- HEADER -->
 
@@ -325,72 +622,160 @@
 
     <img
       src="company-logo.jpeg"
-      alt="Amak Asantewaaba Ventures Logo"
       class="logo"
+      alt="Amak Asantewaaba Ventures Logo"
     >
 
-    <h1>Amak Asantewaaba Ventures</h1>
+    <div class="brand">
+      <h1>Amak Asantewaaba</h1>
+      <p>Ventures</p>
+    </div>
 
-    <p>
-      Quality Products & Reliable Business Services
-    </p>
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search pumps, nails and products..."
+        onkeyup="searchProducts()"
+      >
+
+      <button>
+        🔍
+      </button>
+
+    </div>
+
+
+    <!-- CART -->
+
+    <button
+      class="cart-button"
+      onclick="openCart()"
+      aria-label="Shopping Cart"
+    >
+
+      🛒
+
+      <span
+        class="cart-count"
+        id="cartCount"
+      >
+        0
+      </span>
+
+    </button>
 
   </header>
 
 
-  <!-- NAVIGATION -->
+  <!-- CATEGORIES -->
 
-  <nav>
+  <div class="categories">
 
-    <a href="#products">Products</a>
+    <button
+      class="category"
+      onclick="filterProducts('all')"
+    >
+      All Products
+    </button>
 
-    <a href="#cart">
-      🛒 Cart (<span id="cartCount">0</span>)
+    <button
+      class="category"
+      onclick="filterProducts('pump')"
+    >
+      💧 Pumps
+    </button>
+
+    <button
+      class="category"
+      onclick="filterProducts('nail')"
+    >
+      🔩 Nails
+    </button>
+
+    <button
+      class="category"
+      onclick="filterProducts('building')"
+    >
+      🏗️ Building Materials
+    </button>
+
+  </div>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h2>
+      Welcome to Amak Asantewaaba Ventures
+    </h2>
+
+    <p>
+      Quality Pumps, Nails & Building Products
+    </p>
+
+    <a
+      href="#products"
+      class="hero-button"
+    >
+      Shop Now
     </a>
 
-    <a href="#contact">Contact</a>
-
-  </nav>
+  </section>
 
 
   <!-- MAIN -->
 
-  <div class="container">
+  <main class="container">
 
-    <!-- WELCOME -->
 
-    <section class="welcome">
+    <div class="section-heading">
 
-      <h2>
-        Welcome to Amak Asantewaaba Ventures
+      <h2 id="products">
+        🔥 Featured Products
       </h2>
 
-      <p>
-        Quality products available for customers across Ghana.
-        Select your products and add them to your cart.
-      </p>
-
-    </section>
+    </div>
 
 
     <!-- PRODUCTS -->
 
-    <h2 class="products-title" id="products">
-      Our Products
-    </h2>
+    <section class="products" id="productGrid">
 
 
-    <section class="products">
+      <!-- PUMP 1 -->
 
+      <div
+        class="product"
+        data-category="pump"
+        data-name="Submersible Pump"
+      >
 
-      <!-- PRODUCT 1 -->
+        <div class="product-image">
 
-      <div class="product">
+          <img
+            src="pump 1.jpeg"
+            alt="Submersible Pump"
+          >
 
-        <img
-          src="pump 1.jpeg"
-          alt="Submersible Pump"
-        >
+          <span class="sale">
+            FEATURED
+          </span>
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -398,17 +783,25 @@
             Submersible Pump
           </h3>
 
-          <p>
-            Quality submersible pump suitable for water pumping applications.
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Quality Product)</span>
+          </div>
+
+          <p class="description">
+            Quality submersible pump suitable for water supply applications.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Submersible Pump', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Submersible Pump',
+              0,
+              'pump 1.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -418,14 +811,34 @@
       </div>
 
 
-      <!-- PRODUCT 2 -->
+      <!-- PUMP 2 -->
 
-      <div class="product">
+      <div
+        class="product"
+        data-category="pump"
+        data-name="Water Pump"
+      >
 
-        <img
-          src="pump 2.jpeg"
-          alt="Water Pump"
-        >
+        <div class="product-image">
+
+          <img
+            src="pump 2.jpeg"
+            alt="Water Pump"
+          >
+
+          <span class="sale">
+            POPULAR
+          </span>
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -433,17 +846,25 @@
             Water Pump
           </h3>
 
-          <p>
-            Reliable water pump for different water supply applications.
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Reliable)</span>
+          </div>
+
+          <p class="description">
+            Reliable water pump available for different water applications.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Water Pump', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Water Pump',
+              0,
+              'pump 2.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -453,14 +874,30 @@
       </div>
 
 
-      <!-- PRODUCT 3 -->
+      <!-- DEEP WELL PUMP -->
 
-      <div class="product">
+      <div
+        class="product"
+        data-category="pump"
+        data-name="Deep Well Pump"
+      >
 
-        <img
-          src="pump 1.jpeg"
-          alt="Deep Well Pump"
-        >
+        <div class="product-image">
+
+          <img
+            src="pump 1.jpeg"
+            alt="Deep Well Pump"
+          >
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -468,17 +905,25 @@
             Deep Well Pump
           </h3>
 
-          <p>
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Quality)</span>
+          </div>
+
+          <p class="description">
             Suitable for boreholes, wells and water supply systems.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Deep Well Pump', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Deep Well Pump',
+              0,
+              'pump 1.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -488,14 +933,30 @@
       </div>
 
 
-      <!-- PRODUCT 4 -->
+      <!-- INDUSTRIAL PUMP -->
 
-      <div class="product">
+      <div
+        class="product"
+        data-category="pump"
+        data-name="Industrial Water Pump"
+      >
 
-        <img
-          src="pump 2.jpeg"
-          alt="Industrial Water Pump"
-        >
+        <div class="product-image">
+
+          <img
+            src="pump 2.jpeg"
+            alt="Industrial Water Pump"
+          >
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -503,17 +964,25 @@
             Industrial Water Pump
           </h3>
 
-          <p>
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Durable)</span>
+          </div>
+
+          <p class="description">
             Dependable pumping equipment for various water applications.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Industrial Water Pump', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Industrial Water Pump',
+              0,
+              'pump 2.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -523,14 +992,34 @@
       </div>
 
 
-      <!-- PRODUCT 5 -->
+      <!-- NAIL 1 -->
 
-      <div class="product">
+      <div
+        class="product"
+        data-category="nail building"
+        data-name="Building Nails"
+      >
 
-        <img
-          src="nail 1.jpeg"
-          alt="Building Nails"
-        >
+        <div class="product-image">
+
+          <img
+            src="nail 1.jpeg"
+            alt="Building Nails"
+          >
+
+          <span class="sale">
+            POPULAR
+          </span>
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -538,17 +1027,25 @@
             Building Nails
           </h3>
 
-          <p>
-            Strong steel nails suitable for construction projects.
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Strong & Durable)</span>
+          </div>
+
+          <p class="description">
+            Quality steel nails suitable for construction projects.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Building Nails', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Building Nails',
+              0,
+              'nail 1.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -558,14 +1055,30 @@
       </div>
 
 
-      <!-- PRODUCT 6 -->
+      <!-- NAIL 2 -->
 
-      <div class="product">
+      <div
+        class="product"
+        data-category="nail building"
+        data-name="Steel Nails"
+      >
 
-        <img
-          src="nail 2.jpeg"
-          alt="Steel Nails"
-        >
+        <div class="product-image">
+
+          <img
+            src="nail 2.jpeg"
+            alt="Steel Nails"
+          >
+
+          <button
+            class="heart"
+            onclick="favourite(this)"
+          >
+            ♡
+          </button>
+
+        </div>
+
 
         <div class="product-info">
 
@@ -573,17 +1086,25 @@
             Steel Nails
           </h3>
 
-          <p>
-            Durable steel nails available for different construction needs.
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(Durable)</span>
+          </div>
+
+          <p class="description">
+            Durable steel nails for different construction needs.
           </p>
 
           <div class="price">
-            Price: Contact Us
+            GH₵ <small>Contact Us</small>
           </div>
 
           <button
-            class="cart-btn"
-            onclick="addToCart('Steel Nails', 0)"
+            class="add-cart"
+            onclick="addToCart(
+              'Steel Nails',
+              0,
+              'nail 2.jpeg'
+            )"
           >
             🛒 Add to Cart
           </button>
@@ -596,48 +1117,16 @@
     </section>
 
 
-    <!-- SHOPPING CART -->
-
-    <section class="cart-section" id="cart">
-
-      <h2>
-        🛒 Your Shopping Cart
-      </h2>
-
-      <div id="cartItems">
-
-        <div class="empty-cart">
-          Your cart is empty.
-        </div>
-
-      </div>
-
-      <div class="cart-total">
-        Total: GH₵<span id="cartTotal">0.00</span>
-      </div>
-
-      <button
-        class="whatsapp-btn"
-        onclick="orderOnWhatsApp()"
-      >
-        💬 Order on WhatsApp
-      </button>
-
-    </section>
-
-
     <!-- CONTACT -->
 
-    <section class="contact" id="contact">
+    <section
+      class="contact"
+      id="contact"
+    >
 
       <h2>
-        Contact Us
+        Contact Amak Asantewaaba Ventures
       </h2>
-
-      <p>
-        <strong>CEO:</strong>
-        Eric Amankwaa Agyapong
-      </p>
 
       <p>
         <strong>Phone:</strong>
@@ -676,7 +1165,8 @@
 
     </section>
 
-  </div>
+
+  </main>
 
 
   <!-- FOOTER -->
@@ -695,28 +1185,95 @@
   </footer>
 
 
-  <!-- SHOPPING CART JAVASCRIPT -->
+  <!-- SHOPPING CART -->
+
+  <div
+    class="cart-panel"
+    id="cartPanel"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        🛒 Shopping Cart
+      </h2>
+
+      <button
+        class="close-cart"
+        onclick="closeCart()"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    >
+
+      <p style="text-align:center;color:#777;">
+        Your cart is empty.
+      </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          Total
+        </span>
+
+        <span>
+          GH₵<span id="cartTotal">0.00</span>
+        </span>
+
+      </div>
+
+
+      <button
+        class="checkout"
+        onclick="orderWhatsApp()"
+      >
+        💬 Order on WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
 
   <script>
 
     let cart = [];
 
 
-    function addToCart(name, price) {
+    /* =========================
+       ADD TO CART
+    ========================= */
 
-      const existingProduct = cart.find(
-        product => product.name === name
+    function addToCart(name, price, image) {
+
+      let existing = cart.find(
+        item => item.name === name
       );
 
-      if (existingProduct) {
+      if (existing) {
 
-        existingProduct.quantity += 1;
+        existing.quantity++;
 
       } else {
 
         cart.push({
           name: name,
           price: price,
+          image: image,
           quantity: 1
         });
 
@@ -724,34 +1281,14 @@
 
       updateCart();
 
-      alert(name + " added to your cart!");
+      openCart();
 
     }
 
 
-    function changeQuantity(index, amount) {
-
-      cart[index].quantity += amount;
-
-      if (cart[index].quantity <= 0) {
-
-        cart.splice(index, 1);
-
-      }
-
-      updateCart();
-
-    }
-
-
-    function removeFromCart(index) {
-
-      cart.splice(index, 1);
-
-      updateCart();
-
-    }
-
+    /* =========================
+       UPDATE CART
+    ========================= */
 
     function updateCart() {
 
@@ -768,7 +1305,7 @@
       if (cart.length === 0) {
 
         cartItems.innerHTML =
-          '<div class="empty-cart">Your cart is empty.</div>';
+          '<p style="text-align:center;color:#777;">Your cart is empty.</p>';
 
         cartCount.textContent = "0";
 
@@ -781,64 +1318,68 @@
 
       let total = 0;
 
-      let itemCount = 0;
+      let count = 0;
 
       let html = "";
 
 
-      cart.forEach((product, index) => {
+      cart.forEach((item, index) => {
 
-        const productTotal =
-          product.price * product.quantity;
+        total += item.price * item.quantity;
 
-        total += productTotal;
-
-        itemCount += product.quantity;
+        count += item.quantity;
 
 
         html += `
 
           <div class="cart-item">
 
+            <img
+              src="${item.image}"
+              alt="${item.name}"
+            >
+
             <div class="cart-item-info">
 
-              <strong>
-                ${product.name}
-              </strong>
+              <h4>
+                ${item.name}
+              </h4>
 
-              <br>
+              <p>
+                ${
+                  item.price > 0
+                  ? "GH₵" + item.price.toFixed(2)
+                  : "Price on request"
+                }
+              </p>
 
-              ${product.price > 0
-                ? "GH₵" + product.price.toFixed(2)
-                : "Price: Contact Us"}
 
-            </div>
+              <div class="quantity">
 
+                <button
+                  onclick="changeQuantity(${index}, -1)"
+                >
+                  −
+                </button>
 
-            <div class="quantity-controls">
+                <strong>
+                  ${item.quantity}
+                </strong>
 
-              <button
-                onclick="changeQuantity(${index}, -1)"
-              >
-                −
-              </button>
+                <button
+                  onclick="changeQuantity(${index}, 1)"
+                >
+                  +
+                </button>
 
-              <strong>
-                ${product.quantity}
-              </strong>
+                <button
+                  class="remove"
+                  onclick="removeItem(${index})"
+                >
+                  Remove
+                </button>
 
-              <button
-                onclick="changeQuantity(${index}, 1)"
-              >
-                +
-              </button>
-
-              <button
-                class="remove-btn"
-                onclick="removeFromCart(${index})"
-              >
-                🗑️
-              </button>
+              </div>
 
             </div>
 
@@ -851,18 +1392,175 @@
 
       cartItems.innerHTML = html;
 
-      cartCount.textContent = itemCount;
+      cartCount.textContent = count;
 
       cartTotal.textContent = total.toFixed(2);
 
     }
 
 
-    function orderOnWhatsApp() {
+    /* =========================
+       CHANGE QUANTITY
+    ========================= */
+
+    function changeQuantity(index, amount) {
+
+      cart[index].quantity += amount;
+
+
+      if (cart[index].quantity <= 0) {
+
+        cart.splice(index, 1);
+
+      }
+
+
+      updateCart();
+
+    }
+
+
+    /* =========================
+       REMOVE ITEM
+    ========================= */
+
+    function removeItem(index) {
+
+      cart.splice(index, 1);
+
+      updateCart();
+
+    }
+
+
+    /* =========================
+       OPEN CART
+    ========================= */
+
+    function openCart() {
+
+      document
+        .getElementById("cartPanel")
+        .classList.add("open");
+
+    }
+
+
+    /* =========================
+       CLOSE CART
+    ========================= */
+
+    function closeCart() {
+
+      document
+        .getElementById("cartPanel")
+        .classList.remove("open");
+
+    }
+
+
+    /* =========================
+       SEARCH
+    ========================= */
+
+    function searchProducts() {
+
+      const search =
+        document
+          .getElementById("searchInput")
+          .value
+          .toLowerCase();
+
+
+      const products =
+        document.querySelectorAll(".product");
+
+
+      products.forEach(product => {
+
+        const name =
+          product.dataset.name.toLowerCase();
+
+
+        if (name.includes(search)) {
+
+          product.style.display = "";
+
+        } else {
+
+          product.style.display = "none";
+
+        }
+
+      });
+
+    }
+
+
+    /* =========================
+       FILTER
+    ========================= */
+
+    function filterProducts(category) {
+
+      const products =
+        document.querySelectorAll(".product");
+
+
+      products.forEach(product => {
+
+        const productCategory =
+          product.dataset.category;
+
+
+        if (
+          category === "all" ||
+          productCategory.includes(category)
+        ) {
+
+          product.style.display = "";
+
+        } else {
+
+          product.style.display = "none";
+
+        }
+
+      });
+
+    }
+
+
+    /* =========================
+       FAVOURITES
+    ========================= */
+
+    function favourite(button) {
+
+      if (button.textContent === "♡") {
+
+        button.textContent = "♥️";
+
+      } else {
+
+        button.textContent = "♡";
+
+      }
+
+    }
+
+
+    /* =========================
+       WHATSAPP ORDER
+    ========================= */
+
+    function orderWhatsApp() {
 
       if (cart.length === 0) {
 
-        alert("Your cart is empty. Please add a product first.");
+        alert(
+          "Your cart is empty. Please add a product first."
+        );
 
         return;
 
@@ -873,41 +1571,49 @@
         "Hello Amak Asantewaaba Ventures,%0A%0A";
 
       message +=
-        "I would like to place an order:%0A%0A";
+        "I would like to order the following:%0A%0A";
 
 
-      cart.forEach(product => {
+      cart.forEach(item => {
 
         message +=
           "• " +
-          product.name +
-          " — Quantity: " +
-          product.quantity +
+          item.name +
+          " - Quantity: " +
+          item.quantity +
           "%0A";
 
       });
 
 
       message +=
-        "%0APlease send me the price and availability.%0A%0A";
+        "%0APlease confirm availability and price.%0A%0A";
 
       message +=
         "Thank you.";
 
 
-      const whatsappURL =
+      const url =
         "https://wa.me/233268669949?text=" +
         message;
 
 
       window.open(
-        whatsappURL,
+        url,
         "_blank"
       );
 
     }
 
+
+    /* =========================
+       INITIALIZE
+    ========================= */
+
+    updateCart();
+
   </script>
+
 
 </body>
 </html>
