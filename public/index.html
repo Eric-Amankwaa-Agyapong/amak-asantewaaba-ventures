@@ -7,7 +7,7 @@
   <title>Amak Asantewaaba Ventures | Online Store</title>
 
   <meta name="description"
-    content="Shop quality submersible pumps, water pumps, nails and building materials from Amak Asantewaaba Ventures in Ghana.">
+        content="Shop quality submersible pumps, water pumps, nails and building materials from Amak Asantewaaba Ventures in Ghana.">
 
   <style>
 
@@ -19,18 +19,17 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f6f6f6;
+      background: #f5f5f5;
       color: #222;
     }
 
     button,
-    input {
+    input,
+    textarea {
       font-family: inherit;
     }
 
-    /* =========================
-       TOP BAR
-    ========================= */
+    /* TOP BAR */
 
     .top-bar {
       background: #123b5d;
@@ -40,17 +39,14 @@
       font-size: 13px;
     }
 
-
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
       background: white;
       padding: 14px 4%;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -58,14 +54,14 @@
     }
 
     .logo {
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       object-fit: contain;
       border-radius: 50%;
     }
 
     .brand {
-      min-width: 220px;
+      min-width: 200px;
     }
 
     .brand h1 {
@@ -74,14 +70,11 @@
     }
 
     .brand p {
-      font-size: 12px;
       color: #777;
+      font-size: 12px;
     }
 
-
-    /* =========================
-       SEARCH
-    ========================= */
+    /* SEARCH */
 
     .search-box {
       flex: 1;
@@ -91,10 +84,9 @@
 
     .search-box input {
       width: 100%;
+      padding: 13px;
       border: 2px solid #123b5d;
       border-right: none;
-      padding: 13px;
-      font-size: 15px;
       outline: none;
       border-radius: 7px 0 0 7px;
     }
@@ -104,22 +96,18 @@
       background: #123b5d;
       color: white;
       padding: 0 20px;
-      cursor: pointer;
       border-radius: 0 7px 7px 0;
-      font-size: 18px;
+      cursor: pointer;
     }
 
-
-    /* =========================
-       CART BUTTON
-    ========================= */
+    /* CART ICON */
 
     .cart-button {
       position: relative;
       border: none;
       background: white;
-      cursor: pointer;
       font-size: 27px;
+      cursor: pointer;
     }
 
     .cart-count {
@@ -131,17 +119,14 @@
       width: 22px;
       height: 22px;
       border-radius: 50%;
-      font-size: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 12px;
       font-weight: bold;
     }
 
-
-    /* =========================
-       CATEGORIES
-    ========================= */
+    /* CATEGORIES */
 
     .categories {
       background: white;
@@ -166,19 +151,16 @@
       color: white;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
       max-width: 1200px;
       margin: 20px auto;
-      padding: 40px 25px;
-      border-radius: 12px;
+      padding: 45px 25px;
       background: #123b5d;
       color: white;
       text-align: center;
+      border-radius: 12px;
     }
 
     .hero h2 {
@@ -187,24 +169,21 @@
     }
 
     .hero p {
-      font-size: 17px;
       margin-bottom: 20px;
+      font-size: 17px;
     }
 
     .hero-button {
       display: inline-block;
       background: #168a45;
       color: white;
-      text-decoration: none;
       padding: 13px 25px;
       border-radius: 7px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-
-    /* =========================
-       MAIN
-    ========================= */
+    /* CONTAINER */
 
     .container {
       max-width: 1200px;
@@ -212,22 +191,12 @@
       padding: 10px 15px 50px;
     }
 
-    .section-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .section-title {
+      color: #123b5d;
       margin: 25px 0 18px;
     }
 
-    .section-heading h2 {
-      color: #123b5d;
-      font-size: 25px;
-    }
-
-
-    /* =========================
-       PRODUCTS
-    ========================= */
+    /* PRODUCTS */
 
     .products {
       display: grid;
@@ -239,14 +208,7 @@
       background: white;
       border-radius: 8px;
       overflow: hidden;
-      position: relative;
-      box-shadow: 0 2px 7px rgba(0,0,0,0.08);
-      transition: 0.2s;
-    }
-
-    .product:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     .product-image {
@@ -260,16 +222,16 @@
       display: block;
     }
 
-    .sale {
+    .badge {
       position: absolute;
       top: 10px;
       left: 10px;
       background: #e63946;
       color: white;
       padding: 5px 8px;
-      border-radius: 4px;
       font-size: 11px;
       font-weight: bold;
+      border-radius: 4px;
     }
 
     .heart {
@@ -279,10 +241,10 @@
       width: 35px;
       height: 35px;
       border: none;
-      border-radius: 50%;
       background: white;
-      cursor: pointer;
+      border-radius: 50%;
       font-size: 19px;
+      cursor: pointer;
     }
 
     .product-info {
@@ -290,39 +252,28 @@
     }
 
     .product-info h3 {
-      color: #222;
       font-size: 16px;
       margin-bottom: 7px;
     }
 
     .rating {
       color: #f5a623;
-      font-size: 13px;
       margin-bottom: 7px;
-    }
-
-    .rating span {
-      color: #777;
+      font-size: 13px;
     }
 
     .description {
       color: #666;
       font-size: 13px;
       min-height: 40px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .price {
       color: #168a45;
-      font-size: 20px;
+      font-size: 19px;
       font-weight: bold;
       margin-bottom: 10px;
-    }
-
-    .price small {
-      color: #999;
-      font-size: 12px;
-      font-weight: normal;
     }
 
     .add-cart {
@@ -340,16 +291,13 @@
       background: #106b35;
     }
 
-
-    /* =========================
-       CART PANEL
-    ========================= */
+    /* CART */
 
     .cart-panel {
       position: fixed;
-      right: -420px;
+      right: -430px;
       top: 0;
-      width: 400px;
+      width: 410px;
       max-width: 95%;
       height: 100vh;
       background: white;
@@ -377,7 +325,7 @@
       background: none;
       border: none;
       color: white;
-      font-size: 25px;
+      font-size: 28px;
       cursor: pointer;
     }
 
@@ -424,8 +372,8 @@
     }
 
     .quantity button {
-      width: 25px;
-      height: 25px;
+      width: 26px;
+      height: 26px;
       border: none;
       background: #123b5d;
       color: white;
@@ -434,11 +382,10 @@
     }
 
     .remove {
-      color: #e63946;
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-size: 12px;
+      background: none !important;
+      color: #e63946 !important;
+      width: auto !important;
+      padding: 0 5px;
     }
 
     .cart-footer {
@@ -454,26 +401,161 @@
       margin-bottom: 15px;
     }
 
-    .checkout {
+    /* CHECKOUT BUTTON */
+
+    .checkout-button {
       width: 100%;
-      border: none;
-      background: #25D366;
+      background: #ff6b00;
       color: white;
-      padding: 14px;
+      border: none;
+      padding: 15px;
       border-radius: 7px;
+      font-size: 17px;
       font-weight: bold;
       cursor: pointer;
-      font-size: 16px;
     }
 
-    .checkout:hover {
+    .checkout-button:hover {
+      background: #e55f00;
+    }
+
+    /* CHECKOUT PAGE */
+
+    .checkout-page {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: #f5f5f5;
+      z-index: 5000;
+      overflow-y: auto;
+    }
+
+    .checkout-page.active {
+      display: block;
+    }
+
+    .checkout-header {
+      background: #123b5d;
+      color: white;
+      padding: 18px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .checkout-header h2 {
+      font-size: 23px;
+    }
+
+    .back-button {
+      background: white;
+      color: #123b5d;
+      border: none;
+      padding: 9px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .checkout-container {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 0 15px 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+
+    .checkout-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .checkout-box h3 {
+      color: #123b5d;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #123b5d;
+    }
+
+    .form-group textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    /* ORDER SUMMARY */
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    .summary-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #168a45;
+    }
+
+    .whatsapp-button {
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .whatsapp-button:hover {
       background: #1da851;
     }
 
+    .checkout-note {
+      background: #fff8e6;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #775500;
+    }
 
-    /* =========================
-       CONTACT
-    ========================= */
+    /* CONTACT */
 
     .contact {
       background: white;
@@ -481,7 +563,6 @@
       padding: 30px 20px;
       border-radius: 10px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     .contact h2 {
@@ -499,10 +580,7 @@
       text-decoration: none;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       background: #123b5d;
@@ -512,10 +590,7 @@
       margin-top: 30px;
     }
 
-
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 900px) {
 
@@ -535,8 +610,11 @@
       .products {
         grid-template-columns: repeat(3, 1fr);
       }
-    }
 
+      .checkout-container {
+        grid-template-columns: 1fr;
+      }
+    }
 
     @media (max-width: 650px) {
 
@@ -552,10 +630,6 @@
 
       .brand h1 {
         font-size: 15px;
-      }
-
-      .brand p {
-        font-size: 10px;
       }
 
       .hero {
@@ -592,742 +666,882 @@
         font-size: 17px;
       }
 
-      .section-heading h2 {
-        font-size: 21px;
-      }
-
       .cart-panel {
         width: 100%;
         max-width: 100%;
+      }
+
+      .checkout-box {
+        padding: 18px;
       }
     }
 
   </style>
 </head>
 
-
 <body>
 
+<!-- TOP BAR -->
 
-  <!-- TOP BAR -->
+<div class="top-bar">
+  🚚 Quality Products • Reliable Service • Ghana
+</div>
 
-  <div class="top-bar">
-    🚚 Quality Products • Reliable Service • Ghana
+
+<!-- HEADER -->
+
+<header>
+
+  <img
+    src="company-logo.jpeg"
+    class="logo"
+    alt="Amak Asantewaaba Ventures Logo"
+  >
+
+  <div class="brand">
+    <h1>Amak Asantewaaba</h1>
+    <p>Ventures</p>
   </div>
 
+  <div class="search-box">
 
-  <!-- HEADER -->
-
-  <header>
-
-    <img
-      src="company-logo.jpeg"
-      class="logo"
-      alt="Amak Asantewaaba Ventures Logo"
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search pumps, nails and products..."
+      onkeyup="searchProducts()"
     >
 
-    <div class="brand">
-      <h1>Amak Asantewaaba</h1>
-      <p>Ventures</p>
-    </div>
-
-
-    <!-- SEARCH -->
-
-    <div class="search-box">
-
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Search pumps, nails and products..."
-        onkeyup="searchProducts()"
-      >
-
-      <button>
-        🔍
-      </button>
-
-    </div>
-
-
-    <!-- CART -->
-
-    <button
-      class="cart-button"
-      onclick="openCart()"
-      aria-label="Shopping Cart"
-    >
-
-      🛒
-
-      <span
-        class="cart-count"
-        id="cartCount"
-      >
-        0
-      </span>
-
-    </button>
-
-  </header>
-
-
-  <!-- CATEGORIES -->
-
-  <div class="categories">
-
-    <button
-      class="category"
-      onclick="filterProducts('all')"
-    >
-      All Products
-    </button>
-
-    <button
-      class="category"
-      onclick="filterProducts('pump')"
-    >
-      💧 Pumps
-    </button>
-
-    <button
-      class="category"
-      onclick="filterProducts('nail')"
-    >
-      🔩 Nails
-    </button>
-
-    <button
-      class="category"
-      onclick="filterProducts('building')"
-    >
-      🏗️ Building Materials
+    <button>
+      🔍
     </button>
 
   </div>
 
+  <button
+    class="cart-button"
+    onclick="openCart()"
+    aria-label="Shopping Cart"
+  >
 
-  <!-- HERO -->
+    🛒
 
-  <section class="hero">
-
-    <h2>
-      Welcome to Amak Asantewaaba Ventures
-    </h2>
-
-    <p>
-      Quality Pumps, Nails & Building Products
-    </p>
-
-    <a
-      href="#products"
-      class="hero-button"
+    <span
+      class="cart-count"
+      id="cartCount"
     >
-      Shop Now
-    </a>
+      0
+    </span>
+
+  </button>
+
+</header>
+
+
+<!-- CATEGORIES -->
+
+<div class="categories">
+
+  <button
+    class="category"
+    onclick="filterProducts('all')"
+  >
+    All Products
+  </button>
+
+  <button
+    class="category"
+    onclick="filterProducts('pump')"
+  >
+    💧 Pumps
+  </button>
+
+  <button
+    class="category"
+    onclick="filterProducts('nail')"
+  >
+    🔩 Nails
+  </button>
+
+  <button
+    class="category"
+    onclick="filterProducts('building')"
+  >
+    🏗️ Building Materials
+  </button>
+
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <h2>
+    Welcome to Amak Asantewaaba Ventures
+  </h2>
+
+  <p>
+    Quality Pumps, Nails & Building Products
+  </p>
+
+  <a
+    href="#products"
+    class="hero-button"
+  >
+    Shop Now
+  </a>
+
+</section>
+
+
+<!-- MAIN -->
+
+<main class="container">
+
+  <h2
+    class="section-title"
+    id="products"
+  >
+    🔥 Featured Products
+  </h2>
+
+
+  <!-- PRODUCTS -->
+
+  <section
+    class="products"
+    id="productGrid"
+  >
+
+
+    <!-- PRODUCT 1 -->
+
+    <div
+      class="product"
+      data-category="pump"
+      data-name="Submersible Pump"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="pump 1.jpeg"
+          alt="Submersible Pump"
+        >
+
+        <span class="badge">
+          FEATURED
+        </span>
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Submersible Pump
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Quality submersible pump suitable for water supply applications.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Submersible Pump', 0, 'pump 1.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div
+      class="product"
+      data-category="pump"
+      data-name="Water Pump"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="pump 2.jpeg"
+          alt="Water Pump"
+        >
+
+        <span class="badge">
+          POPULAR
+        </span>
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Water Pump
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Reliable water pump available for different water applications.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Water Pump', 0, 'pump 2.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+
+    <div
+      class="product"
+      data-category="pump"
+      data-name="Deep Well Pump"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="pump 1.jpeg"
+          alt="Deep Well Pump"
+        >
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Deep Well Pump
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Suitable for boreholes, wells and water supply systems.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Deep Well Pump', 0, 'pump 1.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+
+    <div
+      class="product"
+      data-category="pump"
+      data-name="Industrial Water Pump"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="pump 2.jpeg"
+          alt="Industrial Water Pump"
+        >
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Industrial Water Pump
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Dependable pumping equipment for various water applications.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Industrial Water Pump', 0, 'pump 2.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+
+    <div
+      class="product"
+      data-category="nail building"
+      data-name="Building Nails"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="nail 1.jpeg"
+          alt="Building Nails"
+        >
+
+        <span class="badge">
+          POPULAR
+        </span>
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Building Nails
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Quality steel nails suitable for construction projects.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Building Nails', 0, 'nail 1.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 6 -->
+
+    <div
+      class="product"
+      data-category="nail building"
+      data-name="Steel Nails"
+    >
+
+      <div class="product-image">
+
+        <img
+          src="nail 2.jpeg"
+          alt="Steel Nails"
+        >
+
+        <button
+          class="heart"
+          onclick="favourite(this)"
+        >
+          ♡
+        </button>
+
+      </div>
+
+      <div class="product-info">
+
+        <h3>
+          Steel Nails
+        </h3>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="description">
+          Durable steel nails for different construction needs.
+        </p>
+
+        <div class="price">
+          Price on Request
+        </div>
+
+        <button
+          class="add-cart"
+          onclick="addToCart('Steel Nails', 0, 'nail 2.jpeg')"
+        >
+          🛒 Add to Cart
+        </button>
+
+      </div>
+
+    </div>
 
   </section>
 
 
-  <!-- MAIN -->
+  <!-- CONTACT -->
 
-  <main class="container">
+  <section class="contact">
 
+    <h2>
+      Contact Amak Asantewaaba Ventures
+    </h2>
 
-    <div class="section-heading">
+    <p>
+      <strong>CEO:</strong>
+      Eric Amankwaa Agyapong
+    </p>
 
-      <h2 id="products">
-        🔥 Featured Products
-      </h2>
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+233268669949">
+        +233 268 669 949
+      </a>
+    </p>
 
-    </div>
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:+233235433658">
+        +233 235 433 658
+      </a>
+    </p>
 
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:Amakasantewaaba@yahoo.com">
+        Amakasantewaaba@yahoo.com
+      </a>
+    </p>
 
-    <!-- PRODUCTS -->
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:Amakasantewaaba@gmail.com">
+        Amakasantewaaba@gmail.com
+      </a>
+    </p>
 
-    <section class="products" id="productGrid">
+    <p>
+      <strong>Address:</strong><br>
+      P.O. Box 77<br>
+      Nsuta Wassa<br>
+      Ghana, West Africa
+    </p>
 
+  </section>
 
-      <!-- PUMP 1 -->
+</main>
 
-      <div
-        class="product"
-        data-category="pump"
-        data-name="Submersible Pump"
-      >
 
-        <div class="product-image">
+<!-- FOOTER -->
 
-          <img
-            src="pump 1.jpeg"
-            alt="Submersible Pump"
-          >
+<footer>
 
-          <span class="sale">
-            FEATURED
-          </span>
+  <p>
+    © 2026 Amak Asantewaaba Ventures.
+    All Rights Reserved.
+  </p>
 
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
+  <p>
+    CEO: Eric Amankwaa Agyapong
+  </p>
 
-        </div>
+</footer>
 
 
-        <div class="product-info">
+<!-- SHOPPING CART -->
 
-          <h3>
-            Submersible Pump
-          </h3>
+<div
+  class="cart-panel"
+  id="cartPanel"
+>
 
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Quality Product)</span>
-          </div>
+  <div class="cart-header">
 
-          <p class="description">
-            Quality submersible pump suitable for water supply applications.
-          </p>
+    <h2>
+      🛒 Shopping Cart
+    </h2>
 
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Submersible Pump',
-              0,
-              'pump 1.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- PUMP 2 -->
-
-      <div
-        class="product"
-        data-category="pump"
-        data-name="Water Pump"
-      >
-
-        <div class="product-image">
-
-          <img
-            src="pump 2.jpeg"
-            alt="Water Pump"
-          >
-
-          <span class="sale">
-            POPULAR
-          </span>
-
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
-
-        </div>
-
-
-        <div class="product-info">
-
-          <h3>
-            Water Pump
-          </h3>
-
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Reliable)</span>
-          </div>
-
-          <p class="description">
-            Reliable water pump available for different water applications.
-          </p>
-
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Water Pump',
-              0,
-              'pump 2.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- DEEP WELL PUMP -->
-
-      <div
-        class="product"
-        data-category="pump"
-        data-name="Deep Well Pump"
-      >
-
-        <div class="product-image">
-
-          <img
-            src="pump 1.jpeg"
-            alt="Deep Well Pump"
-          >
-
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
-
-        </div>
-
-
-        <div class="product-info">
-
-          <h3>
-            Deep Well Pump
-          </h3>
-
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Quality)</span>
-          </div>
-
-          <p class="description">
-            Suitable for boreholes, wells and water supply systems.
-          </p>
-
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Deep Well Pump',
-              0,
-              'pump 1.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- INDUSTRIAL PUMP -->
-
-      <div
-        class="product"
-        data-category="pump"
-        data-name="Industrial Water Pump"
-      >
-
-        <div class="product-image">
-
-          <img
-            src="pump 2.jpeg"
-            alt="Industrial Water Pump"
-          >
-
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
-
-        </div>
-
-
-        <div class="product-info">
-
-          <h3>
-            Industrial Water Pump
-          </h3>
-
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Durable)</span>
-          </div>
-
-          <p class="description">
-            Dependable pumping equipment for various water applications.
-          </p>
-
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Industrial Water Pump',
-              0,
-              'pump 2.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- NAIL 1 -->
-
-      <div
-        class="product"
-        data-category="nail building"
-        data-name="Building Nails"
-      >
-
-        <div class="product-image">
-
-          <img
-            src="nail 1.jpeg"
-            alt="Building Nails"
-          >
-
-          <span class="sale">
-            POPULAR
-          </span>
-
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
-
-        </div>
-
-
-        <div class="product-info">
-
-          <h3>
-            Building Nails
-          </h3>
-
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Strong & Durable)</span>
-          </div>
-
-          <p class="description">
-            Quality steel nails suitable for construction projects.
-          </p>
-
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Building Nails',
-              0,
-              'nail 1.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- NAIL 2 -->
-
-      <div
-        class="product"
-        data-category="nail building"
-        data-name="Steel Nails"
-      >
-
-        <div class="product-image">
-
-          <img
-            src="nail 2.jpeg"
-            alt="Steel Nails"
-          >
-
-          <button
-            class="heart"
-            onclick="favourite(this)"
-          >
-            ♡
-          </button>
-
-        </div>
-
-
-        <div class="product-info">
-
-          <h3>
-            Steel Nails
-          </h3>
-
-          <div class="rating">
-            ⭐⭐⭐⭐⭐ <span>(Durable)</span>
-          </div>
-
-          <p class="description">
-            Durable steel nails for different construction needs.
-          </p>
-
-          <div class="price">
-            GH₵ <small>Contact Us</small>
-          </div>
-
-          <button
-            class="add-cart"
-            onclick="addToCart(
-              'Steel Nails',
-              0,
-              'nail 2.jpeg'
-            )"
-          >
-            🛒 Add to Cart
-          </button>
-
-        </div>
-
-      </div>
-
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section
-      class="contact"
-      id="contact"
+    <button
+      class="close-cart"
+      onclick="closeCart()"
     >
+      ×
+    </button>
 
-      <h2>
-        Contact Amak Asantewaaba Ventures
-      </h2>
+  </div>
 
-      <p>
-        <strong>Phone:</strong>
-        <a href="tel:+233268669949">
-          +233 268 669 949
-        </a>
-      </p>
-
-      <p>
-        <strong>Phone:</strong>
-        <a href="tel:+233235433658">
-          +233 235 433 658
-        </a>
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:Amakasantewaaba@yahoo.com">
-          Amakasantewaaba@yahoo.com
-        </a>
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:Amakasantewaaba@gmail.com">
-          Amakasantewaaba@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <strong>Address:</strong><br>
-        P.O. Box 77<br>
-        Nsuta Wassa<br>
-        Ghana, West Africa
-      </p>
-
-    </section>
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <p>
-      © 2026 Amak Asantewaaba Ventures.
-      All Rights Reserved.
-    </p>
-
-    <p>
-      CEO: Eric Amankwaa Agyapong
-    </p>
-
-  </footer>
-
-
-  <!-- SHOPPING CART -->
 
   <div
-    class="cart-panel"
-    id="cartPanel"
+    class="cart-items"
+    id="cartItems"
   >
 
-    <div class="cart-header">
+    <p style="text-align:center;color:#777;">
+      Your cart is empty.
+    </p>
 
-      <h2>
-        🛒 Shopping Cart
-      </h2>
+  </div>
 
-      <button
-        class="close-cart"
-        onclick="closeCart()"
-      >
-        ×
-      </button>
+
+  <div class="cart-footer">
+
+    <div class="cart-total">
+
+      <span>
+        Total
+      </span>
+
+      <span>
+        GH₵
+        <span id="cartTotal">
+          0.00
+        </span>
+      </span>
 
     </div>
 
 
-    <div
-      class="cart-items"
-      id="cartItems"
+    <!-- CLEARLY LABELED CHECKOUT -->
+
+    <button
+      class="checkout-button"
+      onclick="showCheckout()"
     >
+      🛍️ CHECKOUT
+    </button>
 
-      <p style="text-align:center;color:#777;">
-        Your cart is empty.
-      </p>
+  </div>
+
+</div>
+
+
+<!-- CHECKOUT PAGE -->
+
+<div
+  class="checkout-page"
+  id="checkoutPage"
+>
+
+  <div class="checkout-header">
+
+    <h2>
+      🛍️ CHECKOUT
+    </h2>
+
+    <button
+      class="back-button"
+      onclick="closeCheckout()"
+    >
+      ← Back to Cart
+    </button>
+
+  </div>
+
+
+  <div class="checkout-container">
+
+
+    <!-- CUSTOMER INFORMATION -->
+
+    <div class="checkout-box">
+
+      <h3>
+        👤 Customer Information
+      </h3>
+
+
+      <div class="form-group">
+
+        <label for="customerName">
+          Full Name *
+        </label>
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Enter your full name"
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="customerPhone">
+          Phone Number *
+        </label>
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="e.g. 0240000000"
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="deliveryAddress">
+          Delivery Address *
+        </label>
+
+        <textarea
+          id="deliveryAddress"
+          placeholder="Enter your delivery address"
+        ></textarea>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="customerCity">
+          City / Town *
+        </label>
+
+        <input
+          type="text"
+          id="customerCity"
+          placeholder="Enter your city or town"
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="customerNote">
+          Additional Note
+        </label>
+
+        <textarea
+          id="customerNote"
+          placeholder="Any additional information about your order?"
+        ></textarea>
+
+      </div>
 
     </div>
 
 
-    <div class="cart-footer">
+    <!-- ORDER SUMMARY -->
 
-      <div class="cart-total">
+    <div class="checkout-box">
+
+      <h3>
+        📋 ORDER SUMMARY
+      </h3>
+
+
+      <div id="checkoutSummary">
+
+        <p style="color:#777;">
+          No products selected.
+        </p>
+
+      </div>
+
+
+      <div class="summary-total">
 
         <span>
-          Total
+          TOTAL
         </span>
 
         <span>
-          GH₵<span id="cartTotal">0.00</span>
+          GH₵
+          <span id="checkoutTotal">
+            0.00
+          </span>
         </span>
 
       </div>
 
 
       <button
-        class="checkout"
-        onclick="orderWhatsApp()"
+        class="whatsapp-button"
+        onclick="placeWhatsAppOrder()"
       >
-        💬 Order on WhatsApp
+        💬 ORDER VIA WHATSAPP
       </button>
+
+
+      <div class="checkout-note">
+
+        Your order will be sent to
+        <strong>+233 268 669 949</strong>
+        through WhatsApp.
+
+        We will confirm product availability,
+        final price and delivery details.
+
+      </div>
 
     </div>
 
   </div>
 
-
-  <!-- JAVASCRIPT -->
-
-  <script>
-
-    let cart = [];
+</div>
 
 
-    /* =========================
-       ADD TO CART
-    ========================= */
+<!-- JAVASCRIPT -->
 
-    function addToCart(name, price, image) {
+<script>
 
-      let existing = cart.find(
-        item => item.name === name
-      );
+  /* CART */
 
-      if (existing) {
+  let cart = [];
 
-        existing.quantity++;
 
-      } else {
+  /* ADD TO CART */
 
-        cart.push({
-          name: name,
-          price: price,
-          image: image,
-          quantity: 1
-        });
+  function addToCart(name, price, image) {
 
-      }
+    let existing = cart.find(
+      item => item.name === name
+    );
 
-      updateCart();
+    if (existing) {
 
-      openCart();
+      existing.quantity++;
+
+    } else {
+
+      cart.push({
+        name: name,
+        price: price,
+        image: image,
+        quantity: 1
+      });
+
+    }
+
+    updateCart();
+
+    openCart();
+
+  }
+
+
+  /* UPDATE CART */
+
+  function updateCart() {
+
+    const cartItems =
+      document.getElementById("cartItems");
+
+    const cartCount =
+      document.getElementById("cartCount");
+
+    const cartTotal =
+      document.getElementById("cartTotal");
+
+
+    if (cart.length === 0) {
+
+      cartItems.innerHTML =
+        '<p style="text-align:center;color:#777;">Your cart is empty.</p>';
+
+      cartCount.textContent = "0";
+
+      cartTotal.textContent = "0.00";
+
+      return;
 
     }
 
 
-    /* =========================
-       UPDATE CART
-    ========================= */
+    let total = 0;
 
-    function updateCart() {
+    let count = 0;
 
-      const cartItems =
-        document.getElementById("cartItems");
-
-      const cartCount =
-        document.getElementById("cartCount");
-
-      const cartTotal =
-        document.getElementById("cartTotal");
+    let html = "";
 
 
-      if (cart.length === 0) {
+    cart.forEach(
+      (item, index) => {
 
-        cartItems.innerHTML =
-          '<p style="text-align:center;color:#777;">Your cart is empty.</p>';
+        total +=
+          item.price *
+          item.quantity;
 
-        cartCount.textContent = "0";
-
-        cartTotal.textContent = "0.00";
-
-        return;
-
-      }
-
-
-      let total = 0;
-
-      let count = 0;
-
-      let html = "";
-
-
-      cart.forEach((item, index) => {
-
-        total += item.price * item.quantity;
-
-        count += item.quantity;
+        count +=
+          item.quantity;
 
 
         html += `
@@ -1348,8 +1562,9 @@
               <p>
                 ${
                   item.price > 0
-                  ? "GH₵" + item.price.toFixed(2)
-                  : "Price on request"
+                  ? "GH₵" +
+                    item.price.toFixed(2)
+                  : "Price on Request"
                 }
               </p>
 
@@ -1387,127 +1602,437 @@
 
         `;
 
-      });
-
-
-      cartItems.innerHTML = html;
-
-      cartCount.textContent = count;
-
-      cartTotal.textContent = total.toFixed(2);
-
-    }
-
-
-    /* =========================
-       CHANGE QUANTITY
-    ========================= */
-
-    function changeQuantity(index, amount) {
-
-      cart[index].quantity += amount;
-
-
-      if (cart[index].quantity <= 0) {
-
-        cart.splice(index, 1);
-
       }
+    );
 
 
-      updateCart();
+    cartItems.innerHTML = html;
 
-    }
+    cartCount.textContent = count;
+
+    cartTotal.textContent =
+      total.toFixed(2);
+
+  }
 
 
-    /* =========================
-       REMOVE ITEM
-    ========================= */
+  /* CHANGE QUANTITY */
 
-    function removeItem(index) {
+  function changeQuantity(index, amount) {
+
+    cart[index].quantity += amount;
+
+
+    if (
+      cart[index].quantity <= 0
+    ) {
 
       cart.splice(index, 1);
 
-      updateCart();
+    }
+
+
+    updateCart();
+
+  }
+
+
+  /* REMOVE ITEM */
+
+  function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+  }
+
+
+  /* OPEN CART */
+
+  function openCart() {
+
+    document
+      .getElementById("cartPanel")
+      .classList.add("open");
+
+  }
+
+
+  /* CLOSE CART */
+
+  function closeCart() {
+
+    document
+      .getElementById("cartPanel")
+      .classList.remove("open");
+
+  }
+
+
+  /* SHOW CHECKOUT */
+
+  function showCheckout() {
+
+    if (cart.length === 0) {
+
+      alert(
+        "Your cart is empty. Please add a product first."
+      );
+
+      return;
 
     }
 
 
-    /* =========================
-       OPEN CART
-    ========================= */
+    closeCart();
 
-    function openCart() {
+    updateCheckoutSummary();
 
+
+    document
+      .getElementById("checkoutPage")
+      .classList.add("active");
+
+  }
+
+
+  /* CLOSE CHECKOUT */
+
+  function closeCheckout() {
+
+    document
+      .getElementById("checkoutPage")
+      .classList.remove("active");
+
+  }
+
+
+  /* CHECKOUT SUMMARY */
+
+  function updateCheckoutSummary() {
+
+    const summary =
+      document.getElementById(
+        "checkoutSummary"
+      );
+
+    const totalElement =
+      document.getElementById(
+        "checkoutTotal"
+      );
+
+
+    if (cart.length === 0) {
+
+      summary.innerHTML =
+        "<p>No products selected.</p>";
+
+      totalElement.textContent =
+        "0.00";
+
+      return;
+
+    }
+
+
+    let total = 0;
+
+    let html = "";
+
+
+    cart.forEach(
+      item => {
+
+        total +=
+          item.price *
+          item.quantity;
+
+
+        html += `
+
+          <div class="summary-item">
+
+            <span>
+              ${item.name}
+              × ${item.quantity}
+            </span>
+
+            <strong>
+
+              ${
+                item.price > 0
+                ? "GH₵" +
+                  (
+                    item.price *
+                    item.quantity
+                  ).toFixed(2)
+                : "Price on Request"
+              }
+
+            </strong>
+
+          </div>
+
+        `;
+
+      }
+    );
+
+
+    summary.innerHTML = html;
+
+    totalElement.textContent =
+      total.toFixed(2);
+
+  }
+
+
+  /* WHATSAPP ORDER */
+
+  function placeWhatsAppOrder() {
+
+    const name =
       document
-        .getElementById("cartPanel")
-        .classList.add("open");
+        .getElementById(
+          "customerName"
+        )
+        .value
+        .trim();
 
-    }
 
-
-    /* =========================
-       CLOSE CART
-    ========================= */
-
-    function closeCart() {
-
+    const phone =
       document
-        .getElementById("cartPanel")
-        .classList.remove("open");
+        .getElementById(
+          "customerPhone"
+        )
+        .value
+        .trim();
+
+
+    const address =
+      document
+        .getElementById(
+          "deliveryAddress"
+        )
+        .value
+        .trim();
+
+
+    const city =
+      document
+        .getElementById(
+          "customerCity"
+        )
+        .value
+        .trim();
+
+
+    const note =
+      document
+        .getElementById(
+          "customerNote"
+        )
+        .value
+        .trim();
+
+
+    /* VALIDATION */
+
+    if (
+      !name ||
+      !phone ||
+      !address ||
+      !city
+    ) {
+
+      alert(
+        "Please complete all required customer information."
+      );
+
+      return;
 
     }
 
 
-    /* =========================
-       SEARCH
-    ========================= */
+    if (cart.length === 0) {
 
-    function searchProducts() {
+      alert(
+        "Your cart is empty."
+      );
 
-      const search =
-        document
-          .getElementById("searchInput")
-          .value
-          .toLowerCase();
+      return;
+
+    }
 
 
-      const products =
-        document.querySelectorAll(".product");
+    let message =
+      "Hello Amak Asantewaaba Ventures!%0A%0A";
 
 
-      products.forEach(product => {
-
-        const name =
-          product.dataset.name.toLowerCase();
+    message +=
+      "🛍️ NEW ORDER%0A%0A";
 
 
-        if (name.includes(search)) {
+    message +=
+      "👤 Customer Name: " +
+      encodeURIComponent(name) +
+      "%0A";
 
-          product.style.display = "";
+
+    message +=
+      "📞 Phone: " +
+      encodeURIComponent(phone) +
+      "%0A";
+
+
+    message +=
+      "📍 Delivery Address: " +
+      encodeURIComponent(address) +
+      "%0A";
+
+
+    message +=
+      "🏙️ City/Town: " +
+      encodeURIComponent(city) +
+      "%0A%0A";
+
+
+    message +=
+      "📋 ORDER DETAILS%0A";
+
+
+    let total = 0;
+
+
+    cart.forEach(
+      item => {
+
+        total +=
+          item.price *
+          item.quantity;
+
+
+        message +=
+          "• " +
+          encodeURIComponent(
+            item.name
+          ) +
+          " × " +
+          item.quantity;
+
+
+        if (item.price > 0) {
+
+          message +=
+            " = GH₵" +
+            (
+              item.price *
+              item.quantity
+            ).toFixed(2);
 
         } else {
 
-          product.style.display = "none";
+          message +=
+            " = Price on Request";
 
         }
 
-      });
+
+        message += "%0A";
+
+      }
+    );
+
+
+    message +=
+      "%0A💰 TOTAL: GH₵" +
+      total.toFixed(2) +
+      "%0A";
+
+
+    if (note) {
+
+      message +=
+        "%0A📝 Additional Note: " +
+        encodeURIComponent(note);
 
     }
 
 
-    /* =========================
-       FILTER
-    ========================= */
-
-    function filterProducts(category) {
-
-      const products =
-        document.querySelectorAll(".product");
+    message +=
+      "%0A%0APlease confirm availability, final price and delivery details. Thank you.";
 
 
-      products.forEach(product => {
+    const whatsappNumber =
+      "233268669949";
+
+
+    const whatsappURL =
+      "https://wa.me/" +
+      whatsappNumber +
+      "?text=" +
+      message;
+
+
+    window.open(
+      whatsappURL,
+      "_blank"
+    );
+
+  }
+
+
+  /* SEARCH */
+
+  function searchProducts() {
+
+    const search =
+      document
+        .getElementById(
+          "searchInput"
+        )
+        .value
+        .toLowerCase();
+
+
+    const products =
+      document.querySelectorAll(
+        ".product"
+      );
+
+
+    products.forEach(
+      product => {
+
+        const name =
+          product.dataset.name
+            .toLowerCase();
+
+
+        product.style.display =
+          name.includes(search)
+          ? ""
+          : "none";
+
+      }
+    );
+
+  }
+
+
+  /* FILTER */
+
+  function filterProducts(category) {
+
+    const products =
+      document.querySelectorAll(
+        ".product"
+      );
+
+
+    products.forEach(
+      product => {
 
         const productCategory =
           product.dataset.category;
@@ -1515,105 +2040,44 @@
 
         if (
           category === "all" ||
-          productCategory.includes(category)
+          productCategory.includes(
+            category
+          )
         ) {
 
-          product.style.display = "";
+          product.style.display =
+            "";
 
         } else {
 
-          product.style.display = "none";
+          product.style.display =
+            "none";
 
         }
 
-      });
-
-    }
-
-
-    /* =========================
-       FAVOURITES
-    ========================= */
-
-    function favourite(button) {
-
-      if (button.textContent === "♡") {
-
-        button.textContent = "♥️";
-
-      } else {
-
-        button.textContent = "♡";
-
       }
+    );
 
-    }
-
-
-    /* =========================
-       WHATSAPP ORDER
-    ========================= */
-
-    function orderWhatsApp() {
-
-      if (cart.length === 0) {
-
-        alert(
-          "Your cart is empty. Please add a product first."
-        );
-
-        return;
-
-      }
+  }
 
 
-      let message =
-        "Hello Amak Asantewaaba Ventures,%0A%0A";
+  /* FAVOURITE */
 
-      message +=
-        "I would like to order the following:%0A%0A";
+  function favourite(button) {
 
+    button.textContent =
+      button.textContent === "♡"
+      ? "♥"
+      : "♡";
 
-      cart.forEach(item => {
-
-        message +=
-          "• " +
-          item.name +
-          " - Quantity: " +
-          item.quantity +
-          "%0A";
-
-      });
+  }
 
 
-      message +=
-        "%0APlease confirm availability and price.%0A%0A";
+  /* INITIALIZE */
 
-      message +=
-        "Thank you.";
+  updateCart();
 
-
-      const url =
-        "https://wa.me/233268669949?text=" +
-        message;
-
-
-      window.open(
-        url,
-        "_blank"
-      );
-
-    }
-
-
-    /* =========================
-       INITIALIZE
-    ========================= */
-
-    updateCart();
-
-  </script>
-
+</script>
 
 </body>
 </html>
